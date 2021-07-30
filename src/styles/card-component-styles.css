@@ -1,0 +1,41 @@
+#car-type-wrapper h1{
+    color: hsl(0, 0%, 95%);
+}
+
+#car-type-wrapper p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#car-type-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#car-sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+
+#car-suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#car-luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.car-card-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px;
+}
+
+.car-card-layout:nth-child(1){
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.car-card-layout:nth-child(3){
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
