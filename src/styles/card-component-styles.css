@@ -1,41 +1,90 @@
-#car-type-wrapper h1{
-    color: hsl(0, 0%, 95%);
-}
+/*IDS*/
+#car-type-wrapper h1{ color: hsl(0, 0%, 95%); font-weight: 700; }
 
-#car-type-wrapper p{
-    color: hsla(0, 0%, 100%, 0.75);
-}
+#car-type-wrapper p{ color: hsla(0, 0%, 100%, 0.75); font-weight: 400; }
 
-#car-type-wrapper{
-    display: flex;
-    flex-direction: row;
-}
+#car-type-wrapper{ display: flex; flex-direction: row; }
 
-#car-sedan{
-    background-color: hsl(31, 77%, 52%);
-}
+#car-sedan{ background-color: hsl(31, 77%, 52%); }
 
-#car-suv{
-    background-color: hsl(184, 100%, 22%);
-}
+#car-suv{  background-color: hsl(184, 100%, 22%); }
 
-#car-luxury{
-    background-color: hsl(179, 100%, 13%);
-}
+#car-luxury{ background-color: hsl(179, 100%, 13%); }
 
+/*FONT COLORS COLORS*/
+
+.color-orange{ color: hsl(31, 77%, 52%); }
+
+.color-dark-cyan{ color: hsl(184, 100%, 22%); }
+
+.color-very-dark-cyan{ color: hsl(179, 100%, 13%); }
+
+/*CLASSES*/
 .car-card-layout{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 32px;
+    justify-content: flex-end;
+    padding: 64px;
 }
 
-.car-card-layout:nth-child(1){
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
+.car-card-layout:nth-child(1){ border-bottom-left-radius: 8px; border-top-left-radius: 8px;}
+
+.car-card-layout:nth-child(3){ border-bottom-right-radius: 8px; border-top-right-radius: 8px; }
+
+.std-margin-top{ margin-top: 64px; }
+
+.std-margin-top:first-child{ margin-top: 0px; }
+
+.std-margin-top:last-child{ margin-top: 128px; }
+
+.car-img{ max-width: 30%; }
+
+.button-wrapper{ max-width: 60%; }
+
+.btn-learn{
+    border: 2px solid transparent;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 32px;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-.car-card-layout:nth-child(3){
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
+.btn-learn:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+    #car-type-wrapper{ flex-direction: column; }
+
+    .car-card-layout:nth-child(1){
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    
+    .car-card-layout:nth-child(3){
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+@media (max-width: 768px){
+    #car-type-wrapper{ flex-direction: column; }
+
+    .car-card-layout:nth-child(1){
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    
+    .car-card-layout:nth-child(3){
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 }
