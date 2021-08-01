@@ -3,7 +3,7 @@
 
 #car-type-wrapper p{ color: hsla(0, 0%, 100%, 0.75); font-weight: 400; }
 
-#car-type-wrapper{ display: flex; flex-direction: row; }
+#car-type-wrapper{ display: flex; flex-direction: row; justify-content: center;}
 
 #car-sedan{ background-color: hsl(31, 77%, 52%); }
 
@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 32px;
-    width: 33.3%;
+    width: 23.3%;
 }
 
 .car-card-layout:nth-child(1){ border-bottom-left-radius: 8px; border-top-left-radius: 8px;}
