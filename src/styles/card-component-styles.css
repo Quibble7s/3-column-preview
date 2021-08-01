@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 32px;
-    width: 23.3%;
+    width: 25.3%;
 }
 
 .car-card-layout:nth-child(1){ border-bottom-left-radius: 8px; border-top-left-radius: 8px;}
